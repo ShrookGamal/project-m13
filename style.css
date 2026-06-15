@@ -487,3 +487,70 @@ body {
     .btn-text { display: none; } /* إخفاء النص في الموبايل لتقليل الزحمة */
     .floating-btn { padding: 15px; border-radius: 50%; }
 }
+/* التعديلات الخاصة بالموبايل - استبدلي الجزء القديم بهذا */
+
+@media (max-width: 768px) {
+    /* تصغير خط الهيرو للموبايل */
+    .hero-content h1 { 
+        font-size: 1.8rem; /* تم تصغيره ليكون مريح للعين */
+        line-height: 1.4;
+        margin-bottom: 15px;
+        padding: 0 10px;
+    }
+
+    .hero-content p { 
+        font-size: 0.9rem; /* تصغير طفيف للنص الوصفي */
+        line-height: 1.6;
+        margin-bottom: 15px;
+        padding: 0 10px;
+    }
+
+    .seo-dense {
+        font-size: 0.85rem !important; /* تصغير نص الـ SEO */
+        border-right: 2px solid var(--accent);
+    }
+
+    /* ضبط المسافات في الهيرو */
+    .hero-content {
+        padding-top: 60px; /* لإعطاء مساحة تحت الناف بار */
+    }
+
+    .hero-btns-group {
+        flex-direction: column; 
+        gap: 12px;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .main-btn, .sec-btn { 
+        padding: 14px; 
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    /* إخفاء نص الأزرار العائمة لعدم زحمة الشاشة */
+    .floating-btn { 
+        padding: 15px; 
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+        justify-content: center;
+    }
+
+    /* ضبط الناف بار في الموبايل */
+    .floating-nav {
+        padding: 8px 15px;
+        width: 95%;
+    }
+    
+    .nav-logo { height: 35px; }
+    .main-name { font-size: 1.1rem; }
+}
+@media (max-width: 480px) {
+    .hero-content h1 { 
+        font-size: 1.55rem; 
+    }
+    .hero-content p {
+        font-size: 0.85rem;
+    }
+}
