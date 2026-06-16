@@ -1,7 +1,7 @@
 :root {
-    --bg-dark: #1b3022; /* أخضر غاباتي عميق - هادئ وفخم */
-    --accent: #d4af37;  /* ذهبي مطفي */
-    --cream: #f4f1ea;   /* بيج كريمي هادئ */
+    --bg-dark: #1b3022;
+    --accent: #d4af37;  
+    --cream: #f4f1ea;   
     --text-light: #ffffff;
     --glass: rgba(255, 255, 255, 0.08);
     --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
@@ -20,8 +20,6 @@ body {
 }
 
 .container { width: 90%; max-width: 1200px; margin: auto; }
-
-/* Header & Floating Nav */
 #main-header {
     position: fixed;
     top: 30px;
@@ -47,8 +45,6 @@ body {
     transition: var(--transition-smooth);
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
-
-/* Header Scrolled State */
 #main-header.scrolled {
     top: 0;
 }
@@ -84,8 +80,6 @@ body {
     font-size: 0.9rem;
     transition: 0.3s;
 }
-
-/* Hero Section */
 .hero {
     position: relative;
     height: 100vh;
@@ -123,13 +117,10 @@ body {
 .hero-content h1 { font-size: 3.8rem; font-weight: 900; margin-top: 70px; color: var(--cream); text-shadow: 0 5px 15px rgba(0,0,0,0.3); }
 .hero-content p { font-size: 1.2rem; max-width: 750px; line-height: 1.9; margin-bottom: 20px; color: rgba(255,255,255,0.9); }
 .seo-dense { font-size: 0.9rem !important; opacity: 0.7; border-right: 3px solid var(--accent); padding-right: 20px; }
-
 .hero-btns-group { display: flex; gap: 20px; margin-top: 40px; }
 .main-btn { padding: 18px 40px; background: var(--accent); color: var(--bg-dark); text-decoration: none; border-radius: 12px; font-weight: 800; transition: 0.4s; }
 .sec-btn { padding: 18px 40px; border: 2px solid rgba(255,255,255,0.3); color: white; text-decoration: none; border-radius: 12px; font-weight: 800; backdrop-filter: blur(10px); transition: 0.4s; }
 .main-btn:hover { background: white; transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
-
-/* Mobile Menu */
 .mobile-overlay {
     position: fixed;
     top: -110%; left: 0; width: 100%; height: 100%;
@@ -160,8 +151,6 @@ body {
     cursor: pointer; flex-direction: column; gap: 6px;
 }
 .menu-open-btn span { width: 30px; height: 3px; background: var(--accent); border-radius: 2px; }
-
-/* Responsive */
 @media (max-width: 992px) {
     .nav-links, .desktop-only { display: none; }
     .menu-open-btn { display: flex; }
@@ -171,8 +160,6 @@ body {
     .main-btn, .sec-btn { text-align: center; }
     .floating-nav { padding: 10px 20px; }
 }
-
-/* Animations */
 .reveal-text { opacity: 0; transform: translateY(50px); animation: reveal 1s forwards; }
 .reveal-p { opacity: 0; transform: translateY(50px); animation: reveal 1s 0.3s forwards; }
 .reveal-p-2 { opacity: 0; transform: translateY(50px); animation: reveal 1s 0.6s forwards; }
@@ -180,7 +167,6 @@ body {
 @keyframes reveal {
     to { opacity: 1; transform: translateY(0); }
 }
-/* About Section Styles */
 .about-section {
     padding: 120px 0;
     background: var(--cream);
@@ -194,8 +180,6 @@ body {
     gap: 80px;
     align-items: center;
 }
-
-/* Visuals Side */
 .about-visuals {
     position: relative;
     padding: 40px;
@@ -260,8 +244,6 @@ body {
 }
 
 .floating-card i { color: var(--accent); font-size: 1.5rem; }
-
-/* Text Side */
 .sub-heading { color: var(--accent); text-transform: uppercase; letter-spacing: 2px; font-size: 1rem; margin-bottom: 10px; }
 .main-heading { color: var(--bg-dark); font-size: 2.8rem; font-weight: 900; line-height: 1.2; margin-bottom: 30px; }
 .highlight-p { font-size: 1.2rem; color: var(--bg-dark); font-weight: 600; border-right: 4px solid var(--accent); padding-right: 20px; margin-bottom: 30px; }
@@ -292,8 +274,6 @@ body {
 .counter-box { text-align: center; }
 .counter-box h3 { font-size: 2rem; color: var(--bg-dark); font-weight: 900; margin-bottom: 5px; }
 .counter-box span { font-size: 0.8rem; color: #777; font-weight: 600; }
-
-/* Animations Keyframes */
 @keyframes floatVertical {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
@@ -303,17 +283,14 @@ body {
     0%, 100% { transform: translateX(0); }
     50% { transform: translateX(15px); }
 }
-
-/* Responsiveness */
 @media (max-width: 992px) {
     .about-grid { grid-template-columns: 1fr; gap: 100px; }
     .main-heading { font-size: 2rem; }
     .about-visuals { order: 2; }
 }
-/* Services Section Styles */
 .services-section {
     padding: 120px 0;
-    background: linear-gradient(135deg, #1b3022 0%, #0d1a12 100%); /* خلفية داكنة لإظهار الزجاج */
+    background: linear-gradient(135deg, #1b3022 0%, #0d1a12 100%); 
     position: relative;
 }
 
@@ -347,8 +324,6 @@ body {
     font-size: 1.1rem;
     line-height: 1.8;
 }
-
-/* Glass Cards Grid */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -356,8 +331,8 @@ body {
 }
 
 .glass-card {
-    background: rgba(255, 255, 255, 0.05); /* شفافية خفيفة جداً */
-    backdrop-filter: blur(15px); /* التضبيب الزجاجي */
+    background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(15px); 
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 30px;
@@ -431,8 +406,6 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
-/* Floating Buttons */
 .floating-container {
     position: fixed;
     bottom: 30px;
@@ -464,8 +437,6 @@ body {
 }
 
 .floating-btn i { font-size: 1.5rem; }
-
-/* Pulse Animation for Floating Btns */
 .floating-btn::after {
     content: '';
     position: absolute;
@@ -484,20 +455,19 @@ body {
 @media (max-width: 768px) {
     .light-heading { font-size: 2rem; }
     .floating-container { bottom: 20px; right: 20px; }
-    .btn-text { display: none; } /* إخفاء النص في الموبايل لتقليل الزحمة */
+    .btn-text { display: none; } 
     .floating-btn { padding: 15px; border-radius: 50%; }
 }
 @media (max-width: 768px) {
-    /* 1. تصغير الهيرو جداً لعرض المحتوى بالكامل */
     .hero {
-        height: auto; /* خليه مرن مش ثابت */
+        height: auto; 
         min-height: 90vh;
-        padding-top: 120px; /* مساحة للناف بار */
+        padding-top: 120px;
         padding-bottom: 50px;
     }
 
     .hero-content h1 {
-        font-size: 1.4rem !important; /* صغرنا الخط جداً */
+        font-size: 1.4rem !important; 
         line-height: 1.3;
         margin-bottom: 15px;
     }
@@ -512,8 +482,6 @@ body {
         font-size: 0.75rem !important;
         padding-right: 10px;
     }
-
-    /* 2. حل مشكلة تداخل سكشن "من نحن" */
     .about-section {
         padding: 60px 0;
     }
@@ -530,15 +498,13 @@ body {
         flex-direction: column;
         align-items: center;
     }
-
-    /* تحويل الصور المتداخلة لترتيب بسيط يمنع التداخل */
     .main-img-wrapper {
         width: 100%;
         position: static;
     }
 
     .secondary-img-wrapper, .experience-badge, .floating-card {
-        position: relative !important; /* نلغي الـ absolute عشان ميرموش فوق بعض */
+        position: relative !important; 
         top: auto !important;
         left: auto !important;
         right: auto !important;
@@ -552,17 +518,15 @@ body {
     
     .experience-badge {
         padding: 15px;
-        order: -1; /* نخلي الرقم يظهر أول حاجة */
+        order: -1;
     }
 
     .floating-card {
         width: fit-content !important;
         padding: 10px 20px;
     }
-
-    /* 3. تعديل الـ Counter Grid في الموبايل */
     .counter-grid {
-        grid-template-columns: 1fr; /* خليهم تحت بعض عشان الكلام ميزنقش */
+        grid-template-columns: 1fr; 
         gap: 15px;
         padding: 20px;
     }
@@ -570,18 +534,15 @@ body {
     .counter-box h3 {
         font-size: 1.8rem;
     }
-
-    /* 4. تعديل الأزرار العائمة */
     .floating-container {
         bottom: 15px;
         right: 15px;
         gap: 10px;
     }
 }
-/* Gallery Section Styles */
 .gallery-section {
     padding: 100px 0;
-    background: #0d1a12; /* نفس تدرج الخدمات */
+    background: #0d1a12; 
     overflow: hidden;
 }
 
@@ -594,19 +555,19 @@ body {
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 500px; /* عرض الصورة في الديسكتوب */
+    width: 500px; 
     height: 350px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 15px 50px rgba(0,0,0,0.5);
-    border: 2px solid rgba(212, 175, 55, 0.3); /* إطار ذهبي زجاجي خفيف */
+    border: 2px solid rgba(212, 175, 55, 0.3); 
     transition: 0.5s;
 }
 
 .swiper-slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* لضمان عدم تمطيط الصورة */
+    object-fit: cover; 
     filter: brightness(0.8);
     transition: 0.5s;
 }
@@ -614,8 +575,6 @@ body {
 .swiper-slide-active img {
     filter: brightness(1.1);
 }
-
-/* تخصيص أسهم التنقل والترقيم */
 .swiper-button-next, .swiper-button-prev {
     color: var(--accent) !important;
     background: rgba(255,255,255,0.05);
@@ -633,11 +592,9 @@ body {
     background: var(--accent) !important;
     width: 12px; height: 12px;
 }
-
-/* تعديلات الموبايل للسلايدر */
 @media (max-width: 768px) {
     .swiper-slide {
-        width: 85%; /* صورة عريضة تملأ الشاشة في الموبايل */
+        width: 85%; 
         height: 250px;
     }
     
@@ -646,7 +603,6 @@ body {
         padding-bottom: 60px;
     }
 }
-/* سكشن المعرض - لضمان تناسق أحجام الصور */
 .gallery-section {
     padding: 100px 0;
     background: #0d1a12;
@@ -658,39 +614,31 @@ body {
     padding-top: 50px;
     padding-bottom: 80px;
 }
-
-/* هنا بنثبت حجم الكارت اللي شايل الصورة */
 .swiper-slide {
-    width: 500px !important; /* عرض موحد لكل الصور في الديسكتوب */
-    height: 350px !important; /* ارتفاع موحد لكل الصور */
+    width: 500px !important; 
+    height: 350px !important; 
     border-radius: 25px;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0,0,0,0.4);
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: transform 0.5s ease;
 }
-
-/* هنا بنخلي الصورة تملا الكارت غصب عنها بدون ما تتمط */
 .swiper-slide img {
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover; /* أهم خاصية: بتقص الزيادات وتخلي الصورة مالية المكان بانتظام */
-    object-position: center; /* بتخلي نص الصورة هو اللي ظاهر دايماً */
+    object-fit: cover; 
+    object-position: center; 
     display: block;
-    filter: brightness(0.8) grayscale(20%); /* لمسة فنية هادية */
+    filter: brightness(0.8) grayscale(20%); 
     transition: 0.5s;
 }
-
-/* الصورة اللي في النص تكون واضحة وكبيرة */
 .swiper-slide-active img {
     filter: brightness(1.1) grayscale(0%);
 }
-
-/* تعديلات الموبايل لضمان التناسق أيضاً */
 @media (max-width: 768px) {
     .swiper-slide {
-        width: 85% !important; /* في الموبايل بنخليها تاخد عرض الشاشة تقريباً */
-        height: 280px !important; /* بنقلل الارتفاع شوية عشان يناسب الموبايل */
+        width: 85% !important; 
+        height: 280px !important; 
         border-radius: 20px;
     }
     
@@ -699,7 +647,6 @@ body {
         padding-bottom: 60px;
     }
 }
-/* Why Us Section Styles */
 .why-us-section {
     padding: 120px 0;
     background: #1b3022;
@@ -713,8 +660,6 @@ body {
     gap: 80px;
     align-items: center;
 }
-
-/* Stats Bars */
 .stats-bars { margin-top: 40px; }
 .bar-item { margin-bottom: 25px; }
 .bar-info { display: flex; justify-content: space-between; color: white; margin-bottom: 8px; font-weight: 700; font-size: 0.9rem; }
@@ -725,8 +670,6 @@ body {
     width: 0; 
     transition: width 2s cubic-bezier(0.16, 1, 0.3, 1); 
 }
-
-/* Premium Glass Cards */
 .why-cards-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -780,22 +723,17 @@ body {
 
 .glass-card-premium h3 { color: white; margin-bottom: 15px; font-weight: 800; }
 .glass-card-premium p { color: rgba(255,255,255,0.6); font-size: 0.85rem; line-height: 1.6; }
-
-/* Mobile Adjustments */
 @media (max-width: 992px) {
     .why-grid { grid-template-columns: 1fr; gap: 50px; }
     .why-cards-grid { grid-template-columns: 1fr; }
     .light-heading { font-size: 2.2rem; }
 }
-/* Locations Section Styles */
 .locations-section {
     padding: 100px 0;
     background: linear-gradient(to bottom, #32503c, #1a3422);
     position: relative;
     overflow: hidden;
 }
-
-/* خلفية جمالية - دوائر مضيئة */
 .locations-section::after {
     content: '';
     position: absolute;
@@ -866,8 +804,6 @@ body {
     margin-bottom: 20px;
     font-weight: 600;
 }
-
-/* الموبايل - جعل الكروت صفين بدلاً من واحد لزيادة الجاذبية */
 @media (max-width: 768px) {
     .locations-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -882,11 +818,9 @@ body {
         font-size: 1.8rem;
     }
 }
-/* تأثير الظهور المتتالي - الكروت تظهر ورا بعض */
 .locations-grid .location-card:nth-child(n) {
     transition-delay: calc(0.05s * var(--i, 1));
 }
-/* Contact Section Styles */
 .contact-section {
     position: relative;
     padding: 120px 0;
@@ -946,36 +880,28 @@ body {
     display: flex; align-items: center; justify-content: center;
     font-size: 1.5rem; color: white;
 }
-
 .call-bg { background: var(--accent); color: var(--bg-dark); }
 .whatsapp-bg { background: #25d366; }
-
 .contact-info h3 { color: white; font-size: 1.2rem; margin-bottom: 5px; }
 .contact-info p { color: rgba(255, 255, 255, 0.8); font-size: 1.5rem; font-weight: 900; letter-spacing: 1px; }
-
 .arrow-icon { margin-right: auto; color: var(--accent); font-size: 1.2rem; }
-
-/* Footer Styles */
 .main-footer {
     background: #0a140d;
     padding: 80px 0 0;
     color: rgba(255, 255, 255, 0.7);
 }
-
 .footer-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
     gap: 40px;
     padding-bottom: 60px;
 }
-
 .footer-col h4 {
     color: white;
     font-size: 1.2rem;
     margin-bottom: 25px;
     position: relative;
 }
-
 .footer-col h4::after {
     content: '';
     position: absolute;
@@ -983,34 +909,26 @@ body {
     width: 40px; height: 2px;
     background: var(--accent);
 }
-
 .footer-logo { color: white; font-size: 1.8rem; font-weight: 900; margin-bottom: 20px; }
 .footer-logo span { color: var(--accent); font-size: 0.8rem; display: block; font-weight: 400; }
-
 .footer-links { list-style: none; }
 .footer-links li { margin-bottom: 12px; }
 .footer-links li a { color: inherit; text-decoration: none; transition: 0.3s; }
 .footer-links li a:hover { color: var(--accent); padding-right: 10px; }
-
 .contact-list { list-style: none; }
 .contact-list li { display: flex; gap: 15px; margin-bottom: 15px; align-items: center; }
 .contact-list li i { color: var(--accent); width: 20px; }
-
 .social-links { display: flex; gap: 15px; margin-top: 25px; }
 .social-links a { width: 40px; height: 40px; background: rgba(255,255,255,0.05); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; transition: 0.3s; text-decoration: none; }
 .social-links a:hover { background: var(--accent); color: var(--bg-dark); transform: translateY(-5px); }
-
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding: 30px 0;
     text-align: center;
     font-size: 0.9rem;
 }
-
 .gmt-credit { margin-top: 10px; color: rgba(255, 255, 255, 0.4); }
 .gmt-credit a { color: var(--accent); text-decoration: none; font-weight: 700; }
-
-/* Mobile Footer */
 @media (max-width: 992px) {
     .footer-grid { grid-template-columns: 1fr 1fr; }
 }
