@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -26,7 +27,6 @@
                 <li><a href="#about" class="link">من نحن</a></li>
                 <li><a href="#services" class="link">خدماتنا</a></li>
                 <li><a href="#why-us" class="link">لماذا نحن</a></li>
-                <li><a href="#faq" class="link">الأسئلة</a></li>
                 <li><a href="#contact" class="link">تواصل معنا</a></li>
             </ul>
 
@@ -51,7 +51,6 @@
             <li><a href="#about">من نحن</a></li>
             <li><a href="#services">خدماتنا</a></li>
             <li><a href="#why-us">لماذا نحن</a></li>
-            <li><a href="#faq">الأسئلة الشائعة</a></li>
             <li><a href="#contact">تواصل معنا</a></li>
         </ul>
         <div class="mobile-footer-text">سفيان - نعتني بأثاثك كأنه لنا</div>
@@ -216,10 +215,317 @@
         </div>
     </div>
 </section>
+<section id="gallery" class="gallery-section animate-on-scroll">
+    <div class="container">
+        <div class="section-header">
+            <span class="badge">معرض أعمالنا</span>
+            <h2 class="light-heading">ثق في "سفيان" كما وثق هؤلاء</h2>
+        </div>
 
+        <div class="swiper main-slider">
+            <div class="swiper-wrapper">
+                <!-- تأكدي أن مجلد الصور بجانب ملف الـ html واسمه images -->
+                <div class="swiper-slide"><img src="images/about.png" alt="سفيان"></div>
+                <div class="swiper-slide"><img src="images/about2.png" alt="نقل أثاث"></div>
+                <div class="swiper-slide"><img src="images/gallery2.webp" alt="معرض"></div>
+                <div class="swiper-slide"><img src="images/gallery5.webp" alt="معرض"></div>
+                <div class="swiper-slide"><img src="images/gallery6.jpeg" alt="معرض"></div> <!-- لاحظي jpeg -->
+                <div class="swiper-slide"><img src="images/img1.avif" alt="صورة"></div> <!-- لاحظي avif -->
+                <div class="swiper-slide"><img src="images/img2.avif" alt="صورة"></div>
+                <div class="swiper-slide"><img src="images/img4.jpg" alt="صورة"></div>
+                <div class="swiper-slide"><img src="images/img5.jpg" alt="صورة"></div>
+                <div class="swiper-slide"><img src="images/img8.jpg" alt="صورة"></div>
+                <div class="swiper-slide"><img src="images/img10.jpg" alt="صورة"></div>
+            </div>
+            
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+<!-- Why Us Section -->
+<section id="why-us" class="why-us-section">
+    <div class="container why-grid">
+        
+        <!-- Left: Text Content -->
+        <div class="why-text animate-on-scroll">
+            <span class="badge">لماذا تختار سفيان؟</span>
+            <h2 class="light-heading">نحن لا ننقل الأثاث فحسب.. نحن ننقل الثقة</h2>
+            <p class="section-desc">
+                اختيارك لشركة <b>سفيان لنقل الأثاث</b> يعني اختيارك لراحة البال المطلقة. نحن ندرك تماماً قيمة كل قطعة أثاث في منزلك، ولذلك قمنا بتطوير منظومة عمل هي الأحدث في <b>العباسية ومدينة نصر وأكتوبر والمقطم</b>.
+            </p>
+            
+            <div class="stats-bars">
+                <div class="bar-item">
+                    <div class="bar-info"><span>دقة المواعيد</span><span>100%</span></div>
+                    <div class="bar-outer"><div class="bar-inner" data-width="100%"></div></div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-info"><span>سلامة المنقولات</span><span>99.9%</span></div>
+                    <div class="bar-outer"><div class="bar-inner" data-width="99.9%"></div></div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-info"><span>رضا العملاء في المقطم وأكتوبر</span><span>100%</span></div>
+                    <div class="bar-outer"><div class="bar-inner" data-width="100%"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Animated Cards Grid -->
+        <div class="why-cards-grid">
+            <!-- Card 1 -->
+            <div class="why-card glass-card-premium animate-on-scroll">
+                <div class="card-glow"></div>
+                <div class="icon-wrap"><i class="fas fa-shipping-fast"></i></div>
+                <h3>سرعة التنفيذ</h3>
+                <p>نصل إليك في <b>العباسية وميدان الجيش</b> خلال ساعة واحدة من طلب الخدمة، مع فريق عمل متكامل وجاهز.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="why-card glass-card-premium animate-on-scroll">
+                <div class="card-glow"></div>
+                <div class="icon-wrap"><i class="fas fa-user-shield"></i></div>
+                <h3>أمان وضمان</h3>
+                <p>نقدم ضماناً حقيقياً ضد الكسر والخدش، مع تغليف "سوبر بريميوم" لقطع الأثاث الحساسة والزجاج.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="why-card glass-card-premium animate-on-scroll">
+                <div class="card-glow"></div>
+                <div class="icon-wrap"><i class="fas fa-hand-holding-usd"></i></div>
+                <h3>أرخص سعر</h3>
+                <p>نوازن بين الجودة العالمية والسعر المحلي المناسب لسكان <b>أكتوبر والحي السابع بمدينة نصر</b>.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="why-card glass-card-premium animate-on-scroll">
+                <div class="card-glow"></div>
+                <div class="icon-wrap"><i class="fas fa-cogs"></i></div>
+                <h3>تكنولوجيا حديثة</h3>
+                <p>نمتلك أحدث أوناش الرفع في مصر وسيارات "جامبو" مغلقة مجهزة بممتصات صدمات للطرق الوعرة.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Reach Everywhere Section -->
+<section id="locations" class="locations-section">
+    <div class="container">
+        <div class="section-header animate-on-scroll">
+            <span class="badge">تغطية شاملة</span>
+            <h2 class="light-heading">نصلكم أينما كنتم.. من الإسكندرية إلى أسوان</h2>
+            <p class="section-desc">
+                أسطول <b>سفيان لنقل الأثاث</b> يجوب شوارع مصر على مدار الساعة. نخدم عملائنا في كافة محافظات الجمهورية بأسعار تنافسية وسرعة فائقة. اختر محافظتك واترك الباقي علينا.
+            </p>
+        </div>
+
+        <div class="locations-grid">
+            <!-- القاهرة الكبرى -->
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>القاهرة</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>الجيزة</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>الإسكندرية</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>الدقهلية</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>البحر الأحمر</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>البحيرة</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>الفيوم</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>الغربية</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>الإسماعيلية</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>المنوفية</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>المنيا</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>القليوبية</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>الوادي الجديد</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>الشرقية</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>السويس</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>أسوان</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>أسيوط</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>بني سويف</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>بورسعيد</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>دمياط</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>جنوب سيناء</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>كفر الشيخ</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>مطروح</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>الأقصر</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>قنا</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>شمال سيناء</span>
+            </div>
+            <div class="location-card glass-tile animate-on-scroll">
+                <div class="tile-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>سوهاج</span>
+            </div>
+        </div>
+        
+        <div class="cta-location animate-on-scroll">
+            <p>هل تحتاج لنقل أثاثك لمحافظة أخرى؟</p>
+            <a href="tel:01038843836" class="main-btn">اطلب تسعير رحلتك الآن</a>
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="contact-bg-blur"></div>
+    <div class="contact-overlay"></div>
+    
+    <div class="container contact-content">
+        <div class="section-header animate-on-scroll">
+            <span class="badge">تواصل مباشر</span>
+            <h2 class="light-heading">نحن هنا للإجابة على استفساراتكم</h2>
+            <p class="section-desc">فريق سفيان جاهز لتقديم عرض سعر فوري . اختر وسيلة التواصل المناسبة لك.</p>
+        </div>
+
+        <div class="contact-cards-stack">
+            <!-- Call Card -->
+            <a href="tel:01038843836" class="contact-glass-card animate-on-scroll">
+                <div class="contact-icon call-bg"><i class="fas fa-phone-alt"></i></div>
+                <div class="contact-info">
+                    <h3>إتصل بنا الآن</h3>
+                    <p>01038843836</p>
+                </div>
+                <i class="fas fa-chevron-left arrow-icon"></i>
+            </a>
+
+            <!-- WhatsApp Card -->
+            <a href="https://wa.me/201038830133" target="_blank" class="contact-glass-card animate-on-scroll">
+                <div class="contact-icon whatsapp-bg"><i class="fab fa-whatsapp"></i></div>
+                <div class="contact-info">
+                    <h3>تواصل عبر واتساب</h3>
+                    <p>01038830133</p>
+                </div>
+                <i class="fas fa-chevron-left arrow-icon"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="main-footer">
+    <div class="container footer-grid">
+        <!-- Col 1: About -->
+        <div class="footer-col about-col">
+            <h3 class="footer-logo">سفيان <span>لنقل الأثاث</span></h3>
+            <p>الشركة الرائدة في خدمات نقل العفش وتغليفه في مصر. نغطي العباسية، مدينة نصر، المقطم، وأكتوبر بأحدث المعدات وأفضل الأسعار لضمان راحة عملائنا.</p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+            <h4>روابط سريعة</h4>
+            <ul class="footer-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#services">خدماتنا</a></li>
+                <li><a href="#why-us">لماذا نحن</a></li>
+                <li><a href="#faq">الأسئلة الشائعة</a></li>
+            </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div class="footer-col">
+            <h4>خدماتنا</h4>
+            <ul class="footer-links">
+                <li><a href="#services">فك وتركيب العفش</a></li>
+                <li><a href="#services">تغليف الأثاث الشامل</a></li>
+                <li><a href="#services">ونش رفع هيدروليكي</a></li>
+                <li><a href="#services">نقل مكاتب وشركات</a></li>
+                <li><a href="#services">تلميع وتنظيف الموبيليا</a></li>
+            </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div class="footer-col">
+            <h4>بيانات التواصل</h4>
+            <ul class="contact-list">
+                <li><i class="fas fa-phone"></i> 01038843836</li>
+                <li><i class="fab fa-whatsapp"></i> 01038830133</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2026 جميع الحقوق محفوظة لشركة سفيان لنقل الأثاث</p>
+            <p class="gmt-credit">تصميم وبرمجة <a href="https://www.facebook.com/share/17UzqgSwiu/" target="_blank">GMTWeb</a></p>
+        </div>
+    </div>
+</footer>
 <!-- Floating Action Buttons -->
 <div class="floating-container">
-    <a href="https://wa.me/201038843836" target="_blank" class="floating-btn whatsapp" title="تواصل عبر واتساب">
+    <a href="https://wa.me/201038830133" target="_blank" class="floating-btn whatsapp" title="تواصل عبر واتساب">
         <i class="fab fa-whatsapp"></i>
         <span class="btn-text">واتساب</span>
     </a>
@@ -228,6 +534,7 @@
         <span class="btn-text">اتصال</span>
     </a>
 </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
